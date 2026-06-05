@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Festividades Principales de México</title>
+    <style>
+        :root {
+            --primary-color: #d9381e; /* Rojo mexicano */
+            --secondary-color: #f29f05; /* Cempasúchil / Naranja */
+            --bg-color: #f9f6f0; /* Blanco hueso */
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Contenedor de Tarjetas (Grid) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Estilo de las Tarjetas */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(217, 56, 30, 0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+            /* Simulación de imagen con degradado cálido */
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        /* Elemento de Interactividad: Acordeón Nativo (Detalles) */
+        details {
+            background-color: #fff9f0;
+            border-left: 4px solid var(--secondary-color);
+            padding: 10px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        details summary {
+            font-weight: bold;
+            color: var(--primary-color);
+            outline: none;
+        }
+
+        details p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>5 festividades principales de México</h1>
+        <p class="intro">
+            Las festividades principales de México incluyen el Día de Muertos (1 y 2 de noviembre), una celebración para honrar a los difuntos con altares y ofrendas; el Día de la Independencia (16 de septiembre), que conmemora la gesta heroica de México con celebraciones patrióticas; la Navidad y las Posadas (diciembre), que incluyen las posadas que recrean el viaje de María y José; el Día de la Virgen de Guadalupe (12 de diciembre), una festividad religiosa de gran devoción; y la Celebración de Reyes Magos y Candelaria (enero y febrero), que marca el fin de la temporada navideña y se celebra con tamales.
+        </p>
+    </header>
+
+    <main class="grid-container">
+        
+        <!-- Tarjeta 1: Día de Muertos -->
+        <article class="card">
+            <div class="card-image">Día de Muertos</div>
+            <div class="card-content">
+                <h2>Día de Muertos</h2>
+                <p>Una de las tradiciones más vivas y coloridas de México, donde se recuerda con alegría a los seres queridos que ya partieron.</p>
+                <details>
+                    <summary>Más información</summary>
+                    <p>Se celebra el 1 y 2 de noviembre. Las familias colocan altares decorados con flores de cempasúchil, papel picado, calaveritas de azúcar, pan de muerto y los platillos favoritos de sus difuntos para guiar sus almas de regreso a casa.</p>
+                </details>
+            </div>
+        </article>
+
+        <!-- Tarjeta 2: Independencia -->
+        <article class="card">
+            <div class="card-image">Independencia</div>
+            <div class="card-content">
+                <h2>Día de la Independencia</h2>
+                <p>La fiesta patria más importante del país, que celebra el inicio de la lucha por la libertad de la nación.</p>
+                <details>
+                    <summary>Más información</summary>
+                    <p>Comienza la noche del 15 de septiembre con el tradicional "Grito de Dolores" dado por el presidente y los alcaldes, seguido de pirotecnia, música de mariachi, comida típica como pozole o chiles en nogada, y desfiles militares el 16 de septiembre.</p>
+                </details>
+            </div>
+        </article>
+
+        <!-- Tarjeta 3: Virgen de Guadalupe -->
+        <article class="card">
+            <div class="card-image">Virgen de Guadalupe</div>
+            <div class="card-content">
+                <h2>Virgen de Guadalupe</h2>
+                <p>Una celebración de profunda fe y devoción que reúne a millones de personas en todo el territorio mexicano.</p>
+                <details>
+                    <summary>Más información</summary>
+                    <p>Cada 12 de diciembre se conmemora la aparición de la Virgen en el cerro del Tepeyac. Millones de peregrinos viajan a la Basílica de Guadalupe en CDMX, y en todo el país se le cantan "Las Mañanitas" a la medianoche acompañadas de danzas tradicionales.</p>
+                </details>
+            </div>
+        </article>
+
+        <!-- Tarjeta 4: Reyes Magos -->
+        <article class="card">
+            <div class="card-image">Reyes Magos</div>
+            <div class="card-content">
+                <h2>Reyes Magos y Candelaria</h2>
+                <p>Una festividad llena de ilusión para los niños y de reunión familiar alrededor de la gastronomía tradicional.</p>
+                <details>
+                    <summary>Más información</summary>
+                    <p>El 6 de enero los niños reciben regalos de los Reyes Magos y se parte la Rosca de Reyes. A quien le salga la figura del "niño", le corresponde invitar los tamales y el atole el 2 de febrero, Día de la Candelaria.</p>
+                </details>
+            </div>
+        </article>
+
+        <!-- Tarjeta 5: Semana Santa -->
+        <article class="card">
+            <div class="card-image">Semana Santa</div>
+            <div class="card-content">
+                <h2>Semana Santa</h2>
+                <p>Período de reflexión espiritual y tradiciones comunitarias arraigadas que detiene el ritmo cotidiano del país.</p>
+                <details>
+                    <summary>Más información</summary>
+                    <p>Celebrada entre marzo y abril, destaca por representaciones solemnes de la Pasión de Cristo en cientos de localidades (siendo la de Iztapalapa la más famosa), así como procesiones de silencio y altares de dolores.</p>
+                </details>
+            </div>
+        </article>
+
+    </main>
+
+</body>
+</html>
